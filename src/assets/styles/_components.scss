@@ -1,0 +1,33 @@
+@tailwind components;
+@layer components {
+  // * {
+  //   border: 1px solid red;
+  // }
+  #app {
+    @apply flex-1;
+  }
+  .container {
+    @apply mx-auto px-3;
+  }
+  .layout-main {
+    @apply flex h-full w-full flex-1 flex-col;
+  }
+  .layout-content {
+    @apply relative flex flex-1 flex-col;
+  }
+  .inner-container {
+    @apply relative mx-auto flex w-full px-3 py-20 sm:w-[theme(screens.sm)]  md:w-[theme(screens.md)] md:py-[7.5rem] lg:w-[theme(screens.lg)] xl:w-[theme(screens.xl)] 2xl:w-[theme(screens.2xl)];
+  }
+  .home-culinary-container {
+    @apply sm:left-[calc((100vw_-_theme(screens.sm))/2_-_(theme(space.3)*.5))] 
+    sm:max-w-[calc(100vw_-_((100vw_-_theme(screens.sm))/2_-_theme(space.3)/2))]
+    md:left-[calc((100vw_-_theme(screens.md))/2_-_(theme(space.3)*.5))] 
+    md:max-w-[calc(100vw_-_((100vw_-_theme(screens.md))/2_-_theme(space.3)/2))]
+    lg:left-[calc((100vw_-_theme(screens.lg))/2_-_(theme(space.3)*.5))] 
+    lg:max-w-[calc(100vw_-_((100vw_-_theme(screens.lg))/2_-_theme(space.3)/2))]
+    xl:left-[calc((100vw_-_theme(screens.xl))/2_-_(theme(space.3)*.5))] 
+    xl:max-w-[calc(100vw_-_((100vw_-_theme(screens.xl))/2_-_theme(space.3)/2))]
+    2xl:left-[calc((100vw_-_theme(screens.2xl))/2_-_(theme(space.3)*.5))] 
+    2xl:max-w-[calc(100vw_-_((100vw_-_theme(screens.2xl))/2_-_theme(space.3)/2))];
+  }
+}
